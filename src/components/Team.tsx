@@ -1,5 +1,6 @@
 import React from 'react';
 import { TeamMember } from '../types';
+import logoImage from '../assets/images/비정형싱킹_로고.png';
 
 interface TeamProps {
   teamName: string;
@@ -11,9 +12,16 @@ const Team: React.FC<TeamProps> = ({ teamName, members }) => {
     <section id="team" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Meet the Team
-          </h2>
+          <div className="flex items-center justify-center space-x-4 mb-6">
+            <img 
+              src={logoImage} 
+              alt="Team Logo" 
+              className="h-12 w-auto"
+            />
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              Meet the Team
+            </h2>
+          </div>
           <p className="text-xl text-gray-600">{teamName}</p>
           <div className="w-20 h-1 bg-emerald-500 mx-auto mt-6"></div>
         </div>

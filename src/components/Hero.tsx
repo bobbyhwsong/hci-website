@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImage from '../assets/images/비정형싱킹_로고.png';
 
 interface HeroProps {
   title: string;
@@ -23,6 +24,13 @@ const Hero: React.FC<HeroProps> = ({ title, tagline, description }) => {
       ></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="mb-8 animate-fadeIn">
+          <img 
+            src={logoImage} 
+            alt="Team Logo" 
+            className="h-24 w-auto mx-auto mb-6"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fadeIn">
           {title}
         </h1>

@@ -1,12 +1,14 @@
 import { ProjectPhase, TeamMember } from '../types';
+import hyungwooImage from '../data/img/hyungwoo.jpeg';
+import conceptCover from '../data/img/concept_cover.jpg';
+import jeonghaImage from '../data/img/jeongha.jpeg';
 
-export const PROJECT_NAME = "응급 도우미";
+export const PROJECT_NAME = "탈북민 응급 훈련 도우미";
 export const PROJECT_TAGLINE = "탈북민의 응급상황 대처 능력 향상을 위한 디지털 솔루션";
 
 export const PROJECT_DESCRIPTION = `
 우리의 프로젝트는 탈북민들이 한국에서 겪을 수 있는 응급상황에 더욱 효과적으로 대처할 수 있도록 돕는 것을 목표로 합니다.
-사용자 연구와 반복적인 프로토타이핑을 통해, 우리는 탈북민들의 특수한 요구사항을 고려한 직관적이고 
-접근하기 쉬운 응급상황 대처 솔루션을 개발하고 있습니다.
+사용자 연구와 반복적인 프로토타이핑을 통해, 우리는 탈북민들의 특수한 요구사항을 고려한 직관적이고 접근하기 쉬운 응급상황 대처 솔루션을 개발하고 있습니다.
 `;
 
 export const TEAM_NAME = "비정형싱킹";
@@ -16,15 +18,15 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: "송형우",
     role: "UX 리서치 & 프로토타입 개발",
-    bio: "사용자 연구 및 프로토타입 개발 담당",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
+    bio: "인간중심컴퓨팅연구실 / 다양성이 건강한 사회의 최우선 조건",
+    image: hyungwooImage
   },
   {
     id: 2,
     name: "김정하",
     role: "UI 디자인 & 프로젝트 관리",
-    bio: "디자인 및 프로젝트 조율 담당",
-    image: "https://images.pexels.com/photos/3394658/pexels-photo-3394658.jpeg?auto=compress&cs=tinysrgb&w=800"
+    bio: "간호정보학연구실 / 취약계층의 건강정보 격차 해결이 나의 관심사",
+    image: jeonghaImage
   }
 ];
 
@@ -41,7 +43,7 @@ export const projectPhases: ProjectPhase[] = [
         title: "사용자 연구 보고서",
         description: "탈북민의 응급상황 대처 관련 니즈 분석",
         type: "report",
-        url: "#",
+        url: "/hci-website/pdfs/필요발견하기.pdf",
         previewImage: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
@@ -58,7 +60,7 @@ export const projectPhases: ProjectPhase[] = [
         title: "아이디어 워크샵 결과",
         description: "브레인스토밍 과정과 초기 컨셉",
         type: "report",
-        url: "#",
+        url: "/hci-website/pdfs/아이디어도출하기.pdf",
         previewImage: "https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
@@ -68,15 +70,23 @@ export const projectPhases: ProjectPhase[] = [
     title: "컨셉 비디오",
     description: "응급상황 대처를 위한 디지털 솔루션의 주요 기능과 사용 시나리오를 보여주는 비디오를 제작했습니다.",
     completed: true,
-    image: "https://images.pexels.com/photos/7088530/pexels-photo-7088530.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: conceptCover,
     artifacts: [
       {
         id: "concept-video-file",
         title: "컨셉 시연 영상",
         description: "솔루션 컨셉을 설명하는 짧은 영상",
         type: "video",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        previewImage: "https://images.pexels.com/photos/7088530/pexels-photo-7088530.jpeg?auto=compress&cs=tinysrgb&w=800"
+        url: "https://youtu.be/_qaaI6RtU_o?si=qM0awpwGjT1iwogT",
+        previewImage: conceptCover
+      },
+      {
+        id: "concept-video-report",
+        title: "컨셉 비디오 제작 보고서",
+        description: "컨셉 비디오 제작 과정과 시나리오 설명",
+        type: "report",
+        url: "/hci-website/pdfs/컨셉비디오.pdf",
+        previewImage: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -92,7 +102,7 @@ export const projectPhases: ProjectPhase[] = [
         title: "Lo-fi 와이어프레임",
         description: "초기 스케치와 와이어프레임",
         type: "prototype",
-        url: "#",
+        url: "https://north-emergency.streamlit.app/",
         previewImage: "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]

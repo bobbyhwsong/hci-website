@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavItem } from '../types';
 import { Menu, X } from 'lucide-react';
+import logoImage from '../assets/images/비정형싱킹_로고.png';
 
 interface NavbarProps {
   projectName: string;
@@ -30,11 +31,16 @@ const Navbar: React.FC<NavbarProps> = ({ projectName, items }) => {
         <div className="flex justify-between items-center">
           <a 
             href="#hero" 
-            className={`text-xl font-bold transition-colors ${
+            className={`flex items-center space-x-3 transition-colors ${
               scrolled ? 'text-emerald-600' : 'text-white'
             }`}
           >
-            {projectName}
+            <img 
+              src={logoImage} 
+              alt="Team Logo" 
+              className="h-8 w-auto"
+            />
+            <span className="text-xl font-bold">{projectName}</span>
           </a>
 
           {/* Desktop Navigation */}

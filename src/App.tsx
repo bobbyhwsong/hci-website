@@ -15,7 +15,7 @@ import {
 } from './data/projectData';
 
 // Add your website title here
-document.title = `${PROJECT_NAME} - Project Portfolio`;
+document.title = `${PROJECT_NAME}`;
 
 const navItems: NavItem[] = [
   { id: 'home', title: 'Home', href: '#hero' },
