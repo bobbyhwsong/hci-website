@@ -3,12 +3,12 @@ import hyungwooImage from '../data/img/hyungwoo.jpeg';
 import conceptCover from '../data/img/concept_cover.jpg';
 import jeonghaImage from '../data/img/jeongha.jpeg';
 
-export const PROJECT_NAME = "탈북민 응급 훈련 도우미";
-export const PROJECT_TAGLINE = "탈북민의 응급상황 대처 능력 향상을 위한 디지털 솔루션";
+export const PROJECT_NAME = "북한이탈주민 응급 훈련 도우미";
+export const PROJECT_TAGLINE = "북한이탈주민의 응급상황 대처 능력 향상을 위한 디지털 솔루션";
 
 export const PROJECT_DESCRIPTION = `
-우리의 프로젝트는 탈북민들이 한국에서 겪을 수 있는 응급상황에 더욱 효과적으로 대처할 수 있도록 돕는 것을 목표로 합니다.
-사용자 연구와 반복적인 프로토타이핑을 통해, 우리는 탈북민들의 특수한 요구사항을 고려한 직관적이고 접근하기 쉬운 응급상황 대처 솔루션을 개발하고 있습니다.
+우리의 프로젝트는 북한이탈주민들이 한국에서 겪을 수 있는 응급상황에 더욱 효과적으로 대처할 수 있도록 돕는 것을 목표로 합니다.
+사용자 연구와 반복적인 프로토타이핑을 통해, 우리는 북한이탈주민들의 특수한 요구사항을 고려한 직관적이고 접근하기 쉬운 응급상황 대처 솔루션을 개발하고 있습니다.
 `;
 
 export const TEAM_NAME = "비정형싱킹";
@@ -34,14 +34,14 @@ export const projectPhases: ProjectPhase[] = [
   {
     id: "need-finding",
     title: "필요 발견하기",
-    description: "탈북민들의 응급상황 대처 경험과 어려움을 이해하기 위해 심층 인터뷰와 설문조사를 진행했습니다. 특히 언어 차이와 문화적 차이로 인한 어려움에 초점을 맞추었습니다.",
+    description: "북한이탈주민들의 응급상황 대처 경험과 어려움을 이해하기 위해 심층 인터뷰와 설문조사를 진행했습니다. 특히 언어 차이와 문화적 차이로 인한 어려움에 초점을 맞추었습니다.",
     completed: true,
     image: "https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&w=800",
     artifacts: [
       {
         id: "need-finding-report",
         title: "사용자 연구 보고서",
-        description: "탈북민의 응급상황 대처 관련 니즈 분석",
+        description: "북한이탈주민의 응급상황 대처 관련 니즈 분석",
         type: "report",
         url: "/hci-website/pdfs/필요발견하기.pdf",
         previewImage: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -51,7 +51,7 @@ export const projectPhases: ProjectPhase[] = [
   {
     id: "idea-generation",
     title: "아이디어 도출하기",
-    description: "연구 결과를 바탕으로 탈북민들의 응급상황 대처 능력을 향상시킬 수 있는 다양한 해결책을 도출했습니다.",
+    description: "연구 결과를 바탕으로 북한이탈주민들의 응급상황 대처 능력을 향상시킬 수 있는 다양한 해결책을 도출했습니다.",
     completed: true,
     image: "https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=800",
     artifacts: [
@@ -83,7 +83,7 @@ export const projectPhases: ProjectPhase[] = [
       {
         id: "concept-video-report",
         title: "컨셉 비디오 제작 보고서",
-        description: "컨셉 비디오 제작 과정과 시나리오 설명",
+        description: "컨셉 비디오 제작 전 시나리오 및 발표 자료",
         type: "report",
         url: "/hci-website/pdfs/컨셉비디오.pdf",
         previewImage: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -93,7 +93,7 @@ export const projectPhases: ProjectPhase[] = [
   {
     id: "low-fi-prototype",
     title: "Lo-fi 프로토타입 & 테스트",
-    description: "종이 프로토타입과 와이어프레임을 통해 초기 디자인을 테스트하고 사용자 피드백을 수집했습니다.",
+    description: "스트림릿 프로토타입을 통해 초기 디자인을 테스트하고 사용자 피드백을 수집했습니다.",
     completed: true,
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
     artifacts: [
@@ -110,7 +110,7 @@ export const projectPhases: ProjectPhase[] = [
   {
     id: "medium-fi-prototype",
     title: "Mid-fi 프로토타입",
-    description: "Lo-fi 테스트 결과를 반영하여 더 상세한 디지털 프로토타입을 개발했습니다.",
+    description: "Lo-fi 테스트 결과를 반영하여 더 상세한 디지털 프로토타입을 개발했습니다. 웹을 통해, AI와 소통하는 방식으로 진행됩니다.",
     completed: false,
     image: "https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=800",
     artifacts: [
@@ -142,7 +142,7 @@ export const projectPhases: ProjectPhase[] = [
   {
     id: "hi-fi-prototype",
     title: "Hi-fi 프로토타입",
-    description: "모든 피드백을 반영한 최종 프로토타입으로, 실제 제품과 유사한 완성도를 보여줍니다.",
+    description: "모든 피드백을 반영한 최종 프로토타입으로, 실제 제품과 유사한 완성도를 보여줍니다. 웹 내에서 실제 로그인 과정부터 시작하여 AI와의 대화를 진행하게 됩니다.",
     completed: false,
     image: "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=800",
     artifacts: [
